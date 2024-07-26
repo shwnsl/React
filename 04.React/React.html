@@ -1,0 +1,38 @@
+<!-- ! 치고 엔터 누르면 html 기본 설정이 나옴 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <!-- 태그 생성 -->
+    <div id="root"></div>
+    <!-- 리액트를 사용하는 코드 입력  -->
+    <script type="text/babel">
+        // 컴포넌트와 컨테이너 생성
+        const component = <h1>리액트 기본</h1>
+        const container = document.getElementById('root')
+
+        // 출력하기
+        ReactDOM.render(component, container)
+
+        // 상수 선언
+        const name = '구름'
+        const imgUrl = 'https://ca.slack-edge.com/T07C5K6S9NW-U07C9CCQYTX-6e0e8557dfc8-512'
+
+        // 컴포넌트와 컨테이너 생성
+        const component2 = <div>
+            <h1>{name} 안녕하냐</h1>
+            <img src = {imgUrl}/>
+        </div>
+
+        // 출력
+        ReactDOM.render(component2, container)
+    </script>
+</body>
+</html>

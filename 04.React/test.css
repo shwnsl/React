@@ -1,0 +1,29 @@
+/* * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+} */
+h1 {
+    color: red;
+    background: black;
+}
+h2 {
+    color: yellow;
+    background: black;
+}
+h3 {
+    color: hotpink;
+    background: black;
+}
+h4 {
+    color: blueviolet;
+    background: black;
+}
+h5 {
+    color: greenyellow;
+    background: black;
+}
+h6 {
+    color: darkcyan;
+    background: black;
+}
